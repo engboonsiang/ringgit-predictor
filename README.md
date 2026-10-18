@@ -1,12 +1,12 @@
 # ringgit-predictor
 
-my first ML project. it tries to predict tomorrow's USD/MYR rate using the previous 3 trading days.
+My first ML project. It tries to predict tomorrow's USD/MYR rate using the previous 3 trading days.
 
-the model is just linear regression. 
+The model is just linear regression. 
 
 ## what it does
 
-pulls USD/MYR data going back to 2015 from Yahoo Finance, then takes the closing prices from the previous 3 days and uses them to predict the next one.
+Pulls USD/MYR data going back to 2015 from Yahoo Finance, then takes the closing prices from the previous 3 days and uses them to predict the next one.
 
 so basically this:
 
@@ -28,7 +28,7 @@ which basically means the predictions were off from the real rate by around RM 0
 
 ### yfinance
 
-never used this before.
+Never used this before.
 
 turns out getting actual market data in python is just:
 
@@ -48,7 +48,7 @@ to save it.
 
 ### pandas
 
-this I think is the biggest takeaway from today's learning sesh.
+This I think is the biggest takeaway from today's learning sesh.
 
 some syntax i used:
 
@@ -116,7 +116,7 @@ plt.title()
 plt.savefig()
 ```
 
-## ML stuff that actually clicked
+## ML stuff that clicked?
 
 **features vs target**
 
@@ -134,7 +134,7 @@ the next closing price
 
 **supervised learning**
 
-i'm giving the model past examples where the correct answer is already known, and it learns from those.
+It means that i'm giving the model past examples where the correct answer is already known, and it learns from those.
 
 **time series can't just be randomly split**
 
