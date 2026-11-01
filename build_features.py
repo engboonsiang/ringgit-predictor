@@ -32,6 +32,11 @@ predictions = model.predict(X_test)
 mae = mean_absolute_error(y_test, predictions)
 print("MAE:", mae)
 
+# baseline: just guess that tomorrow's rate = today's rate
+baseline_mae = mean_absolute_error(y_test, test["lag1"])
+print("Naive baseline MAE (tomorrow = today):", baseline_mae)
+print("Model weights (lag1, lag2, lag3):", model.coef_)
+
 plt.figure(figsize=(10, 5))
 plt.plot(test["Date"].values, y_test.values, label="Real price")
 plt.plot(test["Date"].values, predictions, label="Predicted price")
